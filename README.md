@@ -75,7 +75,7 @@ java_design_patterns_/
 | :-: | --- | --- | --- | --- |
 | 1 | 单例模式 Singleton | `singleton/` | ✅ 已完成 | 分布式雪花 ID 生成器 |
 | 2 | 工厂方法模式 Factory Method | `factory-method/` | ✅ 已完成 | 电商聚合支付渠道处理器 |
-| 3 | 抽象工厂模式 Abstract Factory | `abstract-factory/` | ⏳ 待实现 | 待补充 |
+| 3 | 抽象工厂模式 Abstract Factory | `abstract-factory/` | ✅ 已完成 | 多云厂商服务族（OSS/SMS/MQ） |
 | 4 | 建造者模式 Builder | `builder/` | ⏳ 待实现 | 待补充 |
 | 5 | 原型模式 Prototype | `prototype/` | ⏳ 待实现 | 待补充 |
 
