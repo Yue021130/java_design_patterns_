@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>责任链模式 · 退款审批流</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <header class="site-header">
+        <div class="deco-line"></div>
+        <h1 class="site-title">CHAIN OF RESPONSIBILITY</h1>
+        <p class="site-subtitle">责任链模式 · 退款审批可视化</p>
+        <div class="deco-line"></div>
+    </header>
+
+    <main class="container">
+        <section class="form-panel">
+            <div class="panel-header">
+                <span class="panel-number">01</span>
+                <h2>提交退款申请</h2>
+            </div>
+
+            <form id="refundForm" class="refund-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="orderId">订单编号</label>
+                    <input type="text" id="orderId" name="orderId" value="O-2024-8891" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="userId">用户编号</label>
+                        <input type="text" id="userId" name="userId" value="U-10492" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">退款金额 (¥)</label>
+                        <input type="number" id="amount" name="amount" min="0" step="0.01" value="320" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">退款原因</label>
+                    <textarea id="reason" name="reason" rows="3" required>商品与描述不符，申请退货退款。</textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">启动审批流</span>
+                    <span class="btn-shine"></span>
+                </button>
+            </form>
+
+            <div class="rules-card">
+                <h3>审批规则</h3>
+                <ul class="rules-list">
+                    <li><span class="dot cs"></span>客服：≤ ¥100</li>
+                    <li><span class="dot sp"></span>主管：≤ ¥500</li>
+                    <li><span class="dot fi"></span>财务：> ¥500</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="chain-panel">
+            <div class="panel-header">
+                <span class="panel-number">02</span>
+                <h2>审批链路</h2>
+            </div>
+
+            <div class="chain-stage">
+                <div class="chain-connector"></div>
+
+                <div class="handler-node" data-handler="customer-service">
+                    <div class="node-badge">L1</div>
+                    <div class="node-content">
+                        <div class="node-icon">🎧</div>
+                        <h3>客服审核</h3>
+                        <p class="node-range">¥0 — ¥100</p>
+                    </div>
+                    <div class="node-status">待处理</div>
+                </div>
+
+                <div class="handler-node" data-handler="supervisor">
+                    <div class="node-badge">L2</div>
+                    <div class="node-content">
+                        <div class="node-icon">📝</div>
+                        <h3>主管审批</h3>
+                        <p class="node-range">¥100 — ¥500</p>
+                    </div>
+                    <div class="node-status">待处理</div>
+                </div>
+
+                <div class="handler-node" data-handler="finance">
+                    <div class="node-badge">L3</div>
+                    <div class="node-content">
+                        <div class="node-icon">🏦</div>
+                        <h3>财务复核</h3>
+                        <p class="node-range">> ¥500</p>
+                    </div>
+                    <div class="node-status">待处理</div>
+                </div>
+
+                <div id="requestPacket" class="request-packet">
+                    <span class="packet-label">REFUND</span>
+                    <span class="packet-amount">¥0</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="result-panel" id="resultPanel">
+        <div class="result-card">
+            <div class="stamp" id="approvalStamp">APPROVED</div>
+            <div class="result-content">
+                <h3>审批结果</h3>
+                <p id="resultText">等待提交...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Java 23 Design Patterns · Chain of Responsibility</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
