@@ -54,6 +54,14 @@ classDiagram
 
 - **客户端调用示例**：见 `src/main/java/com/pattern/chain/ChainOfResponsibilityDemo.java`
 
+- **可视化演示**：
+  本项目包含一个纯前端可视化页面，用于直观展示退款申请在责任链中的传递与审批过程。
+  直接用浏览器打开即可：
+  ```
+  chain-of-responsibility/src/main/resources/static/index.html
+  ```
+  页面无需后端启动，支持修改退款金额后观察不同节点的处理结果。
+
 - **运行方式**：
   ```bash
   mvn -pl chain-of-responsibility compile exec:java \
