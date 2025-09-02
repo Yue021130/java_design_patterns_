@@ -77,7 +77,7 @@ java_design_patterns_/
 | 2 | 工厂方法模式 Factory Method | `factory-method/` | ✅ 已完成 | 电商聚合支付渠道处理器 |
 | 3 | 抽象工厂模式 Abstract Factory | `abstract-factory/` | ✅ 已完成 | 多云厂商服务族（OSS/SMS/MQ） |
 | 4 | 建造者模式 Builder | `builder/` | ✅ 已完成 | 金融风控规则分步构建 |
-| 5 | 原型模式 Prototype | `prototype/` | ⏳ 待实现 | 待补充 |
+| 5 | 原型模式 Prototype | `prototype/` | ✅ 已完成 | 电商商品模板克隆 |
 
 ### 结构型模式 (Structural Patterns)
 
