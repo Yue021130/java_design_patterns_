@@ -83,7 +83,7 @@ java_design_patterns_/
 
 | 序号 | 模式 | 模块 | 状态 | 真实业务场景 |
 | :-: | --- | --- | --- | --- |
-| 6 | 适配器模式 Adapter | `adapter/` | ⏳ 待实现 | 待补充 |
+| 6 | 适配器模式 Adapter | `adapter/` | ✅ 已完成 | 第三方物流查询接口统一适配 |
 | 7 | 桥接模式 Bridge | `bridge/` | ⏳ 待实现 | 待补充 |
 | 8 | 组合模式 Composite | `composite/` | ⏳ 待实现 | 待补充 |
 | 9 | 装饰器模式 Decorator | `decorator/` | ⏳ 待实现 | 待补充 |
