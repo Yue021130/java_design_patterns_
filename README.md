@@ -85,7 +85,7 @@ java_design_patterns_/
 | :-: | --- | --- | --- | --- |
 | 6 | 适配器模式 Adapter | `adapter/` | ✅ 已完成 | 第三方物流查询接口统一适配 |
 | 7 | 桥接模式 Bridge | `bridge/` | ✅ 已完成 | 消息类型与发送渠道解耦 |
-| 8 | 组合模式 Composite | `composite/` | ⏳ 待实现 | 待补充 |
+| 8 | 组合模式 Composite | `composite/` | ✅ 已完成 | 电商商品类目树 |
 | 9 | 装饰器模式 Decorator | `decorator/` | ⏳ 待实现 | 待补充 |
 | 10 | 外观模式 Facade | `facade/` | ⏳ 待实现 | 待补充 |
 | 11 | 享元模式 Flyweight | `flyweight/` | ⏳ 待实现 | 待补充 |
