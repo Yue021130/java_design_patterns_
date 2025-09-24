@@ -88,7 +88,7 @@ java_design_patterns_/
 | 8 | 组合模式 Composite | `composite/` | ✅ 已完成 | 电商商品类目树 |
 | 9 | 装饰器模式 Decorator | `decorator/` | ✅ 已完成 | 电商促销价格动态计算 |
 | 10 | 外观模式 Facade | `facade/` | ✅ 已完成 | 电商下单服务统一入口 |
-| 11 | 享元模式 Flyweight | `flyweight/` | ⏳ 待实现 | 待补充 |
+| 11 | 享元模式 Flyweight | `flyweight/` | ✅ 已完成 | 电商订单 SKU 元数据共享 |
 | 12 | 代理模式 Proxy | `proxy/` | ⏳ 待实现 | 待补充 |
 
 ### 行为型模式 (Behavioral Patterns)
