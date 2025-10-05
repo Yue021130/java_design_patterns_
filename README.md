@@ -95,7 +95,7 @@ java_design_patterns_/
 
 | 序号 | 模式 | 模块 | 状态 | 真实业务场景 |
 | :-: | --- | --- | --- | --- |
-| 13 | 责任链模式 Chain of Responsibility | `chain-of-responsibility/` | ⏳ 待实现 | 待补充 |
+| 13 | 责任链模式 Chain of Responsibility | `chain-of-responsibility/` | ✅ 已完成 | 电商售后退款审批流程 |
 | 14 | 命令模式 Command | `command/` | ⏳ 待实现 | 待补充 |
 | 15 | 解释器模式 Interpreter | `interpreter/` | ⏳ 待实现 | 待补充 |
 | 16 | 迭代器模式 Iterator | `iterator/` | ⏳ 待实现 | 待补充 |
